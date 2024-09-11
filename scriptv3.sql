@@ -290,7 +290,7 @@ CREATE NONCLUSTERED INDEX IX_Customer_PhoneNumber ON Customer(PhoneNumber);
 GO
 
 
--- Creación de la tabla Frequent_Flyer_Card con reglas de integridad, índices y seguridad
+-- Creación de la tabla Frequent_Flyer_Card 
 IF OBJECT_ID('Frequent_Flyer_Card', 'U') IS NULL 
 BEGIN
   CREATE TABLE Frequent_Flyer_Card (
@@ -313,7 +313,7 @@ ADD CONSTRAINT CK_FrequentFlyerCard_Miles CHECK (Miles >= 0);
 GO
 
 
--- Creación de la tabla Flight_Number con reglas de integridad, índices y seguridad
+-- Creación de la tabla Flight_Number 
 IF OBJECT_ID('Flight_Number', 'U') IS NULL 
 BEGIN
   CREATE TABLE Flight_Number (
